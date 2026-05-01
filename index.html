@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komal Shah Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="splash-screen" class="splash-screen">
+  <div class="splash-content">
+    <div class="splash-logo">KS</div>
+    <p>Loading portfolio...</p>
+    <div class="splash-loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="brand">
+    <span class="logo">KS</span>
+    <div>
+      <h2>Komal Shah</h2>
+      <p>Backend Developer</p>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home" class="hero-section reveal">
+  <div class="hero-copy">
+    <p class="eyebrow">Welcome to my portfolio</p>
+    <h1>Hi, I’m <span>Komal</span></h1>
+    <p class="typed-line">I build <span id="typed-text"></span></p>
+    <p class="hero-subtitle">Backend developer focused on modern Node.js APIs, automation, and reliable systems.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="button primary">View Projects</a>
+      <a href="#contact" class="button secondary">Let’s Talk</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="glow-circle"></div>
+    <div class="profile-card">
+      <span>🚀</span>
+      <p>Ready to build scalable services and automation.</p>
+    </div>
+  </div>
+</header>
+
+<section id="projects" class="section reveal">
+  <div class="section-header">
+    <h2>Projects</h2>
+    <p>Interactive portfolio projects built with clean APIs and user-first design.</p>
+  </div>
+  <div class="projects-grid">
+    <article class="project-card">
+      <h3>Contact Form System</h3>
+      <p>Build a robust contact workflow with validation, email delivery, and async feedback.</p>
+      <span class="tag">Node.js</span>
+    </article>
+    <article class="project-card">
+      <h3>API Automation</h3>
+      <p>Automate everyday backend workflows with powerful REST endpoints and data sync.</p>
+      <span class="tag">Express</span>
+    </article>
+    <article class="project-card">
+      <h3>System Monitoring</h3>
+      <p>Real-time logs and alerts for backend services using reactive UI components.</p>
+      <span class="tag">JavaScript</span>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="section reveal">
+  <div class="section-header">
+    <h2>Skills</h2>
+    <p>Tools and technologies I use to build reliable backend solutions.</p>
+  </div>
+  <div class="skills-grid">
+    <span class="skill-chip">Node.js</span>
+    <span class="skill-chip">Express</span>
+    <span class="skill-chip">REST APIs</span>
+    <span class="skill-chip">MongoDB</span>
+    <span class="skill-chip">JavaScript</span>
+    <span class="skill-chip">Git</span>
+  </div>
+</section>
+
+<section id="contact" class="section reveal">
+  <div class="section-header">
+    <h2>Contact Me</h2>
+    <p>Send a message and I’ll get back to you quickly.</p>
+  </div>
+  <form id="form" class="contact-form">
+    <div class="fields-row">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+    </div>
+    <textarea id="message" placeholder="Message" required></textarea>
+    <button type="submit" class="button primary">Send Message</button>
+    <p id="form-status" class="form-status"></p>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
